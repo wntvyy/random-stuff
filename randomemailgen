@@ -1,3 +1,4 @@
+math.randomseed(os.clock()*100000000000)
 
 function doRandomEmail()
 local lowercaseFirstName = math.random(0,3)
@@ -46,6 +47,10 @@ local names = {
 	"Calvin",
 	"Jesse",
 	"Carly",
+	"Sandro",
+	"Danielle",
+	"Eric",
+	"Doug",
 }
 
 local lastNames = {
@@ -60,6 +65,7 @@ local lastNames = {
 	"Johnson",
 	"Gay",
 	"Janson",
+	"Menesses",
 }
 
 local emails = {
@@ -105,7 +111,7 @@ return combine2
 	
 end
 
-local times = 50 -- how many emails you wanna print
+local times = 300 -- how many emails you wanna print
 
 for i=0, times, 1 do
 	print(doRandomEmail())
