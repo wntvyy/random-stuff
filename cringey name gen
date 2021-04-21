@@ -1,3 +1,4 @@
+
 math.randomseed(os.clock()*100000000000)
 
 local names = {
@@ -48,6 +49,12 @@ local names = {
 	"Eric",
 	"Doug",
 	"Donald",
+	"Fred",
+	"Ed",
+	"Edward",
+	"Alex",
+	"Charlie",
+	"Malcolm",
 }
 
 local other3 = {
@@ -57,13 +64,17 @@ local other3 = {
     "CoolKid",
     "RichKid",
     "Rich",
-    "24k",
+    "_24k",
     "Golden",
     "Gold",
-    "14k",
-    "Jhit",
-    "GamerGod",
-    "GG",
+    "_14k",
+    "_Jhit",
+    "_GamerGod",
+    "_GG",
+    "_FloridaJhit",
+    "_FL",
+    "_Pro",
+    "_ProFortnite",
 }
 
 local other1 = {
@@ -147,6 +158,8 @@ function generateRandomUsername()
    return username
 end
 
-for i=0, 30 do
+local numberOfNames = 500
+
+for i=0, numberOfNames, 1 do
    print(generateRandomUsername()) 
 end
