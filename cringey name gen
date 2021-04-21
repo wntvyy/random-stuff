@@ -128,19 +128,19 @@ function generateRandomUsername()
    end
    
    if lowercase1 then
-      random1:lower() 
+      random1 = random1:lower() 
    end
    
    if lowercase2 then
-      random2:lower()    
+      random2 = random2:lower()    
    end
    
    if lowercase3 then
-      random3:lower() 
+      random3 = random3:lower() 
    end
    
    if lowercase4 then
-      random4:lower() 
+      random4 = random4:lower() 
    end
    
    local username = random2 .. random1 .. tostring(randomNumber) .. random3 .. random4
