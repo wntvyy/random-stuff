@@ -1,6 +1,8 @@
 
 math.randomseed(os.clock()*100000000000)
 
+local numberOfNames = 500 -- edit here
+
 local names = {
 	"Aaron",
 	"Clara",
@@ -157,8 +159,6 @@ function generateRandomUsername()
    local username = random2 .. random1 .. tostring(randomNumber) .. random3 .. random4
    return username
 end
-
-local numberOfNames = 500
 
 for i=0, numberOfNames, 1 do
    print(generateRandomUsername()) 
